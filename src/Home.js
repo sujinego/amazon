@@ -16,14 +16,14 @@ function Home() {
                 <Product id="2323" 
                     title="제품1"
                     price={30000} 
-                    image="https://via.placeholder.com/50" alt="임시이미지" 
+                    image="img/phone1.jpg"
                     rating={5}
                     />
                 
                 <Product id="2322" 
                     title="제품2"
                     price={25000} 
-                    image="https://via.placeholder.com/50" alt="임시이미지" 
+                    image ="img/phone1.jpg" 
                     rating={3}
                     />
                 </div>
@@ -32,7 +32,7 @@ function Home() {
                 <Product id="2321" 
                     title="제품3"
                     price={34000} 
-                    image="https://via.placeholder.com/50" alt="임시이미지" 
+                    image src="https://via.placeholder.com/50" alt="임시이미지" 
                     rating={4}
                     />
                 <Product id="2320" 
