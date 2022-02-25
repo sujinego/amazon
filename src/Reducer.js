@@ -8,11 +8,17 @@ export const getBasketTotal = (basket) =>
 
 const reducer = (state, action) => {
     switch (action.type) {
-        case 'ADD_TO_BAKET':
+        case 'ADD_TO_BASKET':
             return {
                 ...state,
                 basket: [...state.basket, action.item],
             };
+        
+        case 'EMPTY_BASKET':
+            return{
+                ...state,
+                basket: []
+            }
         
         case 'REMOVE_FROM_BASKET':
             const index = state.basket.findIndex(
@@ -25,7 +31,7 @@ const reducer = (state, action) => {
                     newBasket.splice(index, 1)
                 }else {
                     console.warn(
-                        '(id'+
+                        '(id: '+
                         action.id + ')이 장바구니에 존재하지 않습니다'
                     )
                 }

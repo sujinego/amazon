@@ -8,7 +8,7 @@ function Product( {id, title, image, price, rating} ) {
 
 const addToBasket = () => {
     dispatch({
-        type:'ADD_TO_BAKET',
+        type:'ADD_TO_BASKET',
         item: {
             id:id,
             title:title,
@@ -19,7 +19,6 @@ const addToBasket = () => {
     });
 };
 
-console.log("장바구니", basket);
 
     return (
         <div className="product">
@@ -39,8 +38,9 @@ console.log("장바구니", basket);
                             ))}
                 </div>
             </div>
-            <img src={ image} alt="임시이미지" />
+            <img src={image} alt="" />
             <button onClick={addToBasket}>장바구니 담기</button>
+            console.log(addToBasket)
         </div>
     );
 
